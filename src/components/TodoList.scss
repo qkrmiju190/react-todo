@@ -1,0 +1,28 @@
+@import "~style/common.scss";
+
+.TodoListWrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  width: 600px;
+  height: 600px;
+
+  background: $oc-gray-0;
+  border: 1px solid $oc-gray-4;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .TodoItemListWrapper {
+    overflow-y: scroll;
+    flex: 1;
+  }
+
+  @include media("<=medium") {
+    width: 90%;
+  }
+}
